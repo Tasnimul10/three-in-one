@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(30, 30, 85);
+    animation: gradientMove 12s ease infinite;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 70px;
+    border-radius: 20px;
+    background: rgb(43, 43, 139);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    color: white;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    opacity: 0.85;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* Stopwatch Page */
+
+.stopwatch-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+    color: white;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background-color: rgb(102, 22, 144);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.stopwatch-title {
+    margin-bottom: 20px;
+}
+
+.stopwatch-display {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.stopwatch-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.stopwatch-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.stopwatch-btn.start {
+    background: #2ecc71;
+}
+
+.stopwatch-btn.stop {
+    background: #e67e22;
+}
+
+.stopwatch-btn.reset {
+    background: #e74c3c;
+}
+
+.stopwatch-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.stopwatch-note {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* TODO */
+
+.todo-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43cea2;
+    color: white;
+}
+
+.todo-container {
+    width: 400px;
+    background-color: #167657;
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.todo-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.todo-add-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-add-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-checkbox {
+    cursor: pointer;
+}
+
+.todo-task-text.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todo-delete-btn {
+    border: none;
+    background: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-delete-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/*FORTUNE*/
+
+.fortune-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fortune-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fortune-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fortune-box {
+    background: #fff8dc;
+    border: 3px solid #333;
+    padding: 20px 25px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.fortune-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fortune-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.font{
+    background-color: rgb(45, 174, 45);
+}
+.back{
+    background-color: rgb(189, 163, 29);
+}
+.border{
+    background-color: rgb(189, 45, 45);
+}
+.style{
+    background-color: rgb(58, 58, 163);
+}
+.fortune-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.fortune-footer {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
